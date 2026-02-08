@@ -4,35 +4,38 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="7FJVhXhxPCYe9chNW2lV-7" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Hardware Abstraction" vertex="1">
-          <mxGeometry height="160" width="400" x="120" y="360" as="geometry" />
+        <mxCell id="h2OxYFDqxRqPHlmZN7Bp-2" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#B6A100;fontColor=#000000;strokeColor=#B09500;swimlaneFillColor=#FFFF66;" value="Temperature Demo" vertex="1">
+          <mxGeometry height="640" width="480" x="160" y="240" as="geometry" />
         </mxCell>
-        <mxCell id="7FJVhXhxPCYe9chNW2lV-3" parent="7FJVhXhxPCYe9chNW2lV-7" style="whiteSpace=wrap;html=1;aspect=fixed;" value="LedInf" vertex="1">
-          <mxGeometry height="80" width="80" x="40" y="40" as="geometry" />
+        <mxCell id="7FJVhXhxPCYe9chNW2lV-7" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;swimlaneFillColor=light-dark(#000000,#6DB1FF);startSize=23;" value="Hardware Abstraction Layer" vertex="1">
+          <mxGeometry height="160" width="400" x="200" y="480" as="geometry" />
         </mxCell>
-        <mxCell id="7FJVhXhxPCYe9chNW2lV-4" parent="7FJVhXhxPCYe9chNW2lV-7" style="whiteSpace=wrap;html=1;aspect=fixed;" value="EEPROM" vertex="1">
-          <mxGeometry height="80" width="80" x="160" y="40" as="geometry" />
+        <mxCell id="7FJVhXhxPCYe9chNW2lV-3" parent="7FJVhXhxPCYe9chNW2lV-7" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCE5FF;fontColor=#000000;fontStyle=1" value="LEDIf" vertex="1">
+          <mxGeometry height="80" width="80" x="40" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="7FJVhXhxPCYe9chNW2lV-2" parent="7FJVhXhxPCYe9chNW2lV-7" style="whiteSpace=wrap;html=1;aspect=fixed;" value="TempInf" vertex="1">
-          <mxGeometry height="80" width="80" x="280" y="40" as="geometry" />
+        <mxCell id="7FJVhXhxPCYe9chNW2lV-4" parent="7FJVhXhxPCYe9chNW2lV-7" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCE5FF;fontColor=#000000;fontStyle=1" value="EEPROMIf" vertex="1">
+          <mxGeometry height="80" width="80" x="160" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="7FJVhXhxPCYe9chNW2lV-8" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Application" vertex="1">
-          <mxGeometry height="160" width="160" x="240" y="160" as="geometry" />
+        <mxCell id="7FJVhXhxPCYe9chNW2lV-2" parent="7FJVhXhxPCYe9chNW2lV-7" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCE5FF;fontColor=#000000;fontStyle=1" value="TempIf" vertex="1">
+          <mxGeometry height="80" width="80" x="280" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="7FJVhXhxPCYe9chNW2lV-14" parent="7FJVhXhxPCYe9chNW2lV-8" style="whiteSpace=wrap;html=1;aspect=fixed;" value="TempMon" vertex="1">
-          <mxGeometry height="80" width="80" x="40" y="40" as="geometry" />
+        <mxCell id="7FJVhXhxPCYe9chNW2lV-8" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;swimlaneFillColor=light-dark(#000000,#60A917);" value="Application Layer" vertex="1">
+          <mxGeometry height="160" width="160" x="320" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="7FJVhXhxPCYe9chNW2lV-10" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="MCAL" vertex="1">
-          <mxGeometry height="140" width="400" x="120" y="560" as="geometry" />
+        <mxCell id="7FJVhXhxPCYe9chNW2lV-14" parent="7FJVhXhxPCYe9chNW2lV-8" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCFFCC;fontStyle=1;fontColor=#000000;" value="TempMon" vertex="1">
+          <mxGeometry height="80" width="80" x="40" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="7FJVhXhxPCYe9chNW2lV-11" parent="7FJVhXhxPCYe9chNW2lV-10" style="whiteSpace=wrap;html=1;aspect=fixed;" value="GPIO" vertex="1">
-          <mxGeometry height="80" width="80" x="40" y="40" as="geometry" />
+        <mxCell id="7FJVhXhxPCYe9chNW2lV-10" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;swimlaneFillColor=light-dark(#000000,#FF9281);" value="Microcontroller Abastraction Layer" vertex="1">
+          <mxGeometry height="160" width="400" x="200" y="680" as="geometry" />
         </mxCell>
-        <mxCell id="7FJVhXhxPCYe9chNW2lV-12" parent="7FJVhXhxPCYe9chNW2lV-10" style="whiteSpace=wrap;html=1;aspect=fixed;" value="ADC" vertex="1">
-          <mxGeometry height="80" width="80" x="160" y="40" as="geometry" />
+        <mxCell id="7FJVhXhxPCYe9chNW2lV-11" parent="7FJVhXhxPCYe9chNW2lV-10" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFCCCC;fontStyle=1;fontColor=#000000;" value="GPIO" vertex="1">
+          <mxGeometry height="80" width="80" x="40" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="7FJVhXhxPCYe9chNW2lV-13" parent="7FJVhXhxPCYe9chNW2lV-10" style="whiteSpace=wrap;html=1;aspect=fixed;" value="GPT" vertex="1">
-          <mxGeometry height="80" width="80" x="280" y="40" as="geometry" />
+        <mxCell id="7FJVhXhxPCYe9chNW2lV-12" parent="7FJVhXhxPCYe9chNW2lV-10" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFCCCC;fontStyle=1;fontColor=#000000;" value="ADC" vertex="1">
+          <mxGeometry height="80" width="80" x="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7FJVhXhxPCYe9chNW2lV-13" parent="7FJVhXhxPCYe9chNW2lV-10" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFCCCC;fontStyle=1;fontColor=#000000;" value="GPT" vertex="1">
+          <mxGeometry height="80" width="80" x="280" y="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
