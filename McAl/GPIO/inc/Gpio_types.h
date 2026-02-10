@@ -8,7 +8,7 @@
 #ifndef MCAL_GPIO_INC_GPIO_TYPES_H_
 #define MCAL_GPIO_INC_GPIO_TYPES_H_
 
-#include <stdint.h>
+#include "stdint_mock.h"
 
 /* Logical pin state */
 typedef enum
