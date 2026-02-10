@@ -32,6 +32,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/HwAbl/TempIf/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/HwAbl/LEDIf/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/HwAbl/EEPROMIf/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/McAl/inc}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1787844536" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>

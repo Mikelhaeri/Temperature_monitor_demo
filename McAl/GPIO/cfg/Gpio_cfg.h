@@ -8,7 +8,7 @@
 #ifndef MCAL_GPIO_CFG_GPIO_CFG_H_
 #define MCAL_GPIO_CFG_GPIO_CFG_H_
 
-#include <stdint.h>
+#include "stdint_mock.h"
 #include "Gpio_types.h"
 
 /* Number of pins per port */

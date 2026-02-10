@@ -8,7 +8,7 @@
 #ifndef MCAL_ADC_INC_ADC_H_
 #define MCAL_ADC_INC_ADC_H_
 
-#include <stdint.h>
+#include "stdint_mock.h"
 
 extern void ADC_Init(void);
 

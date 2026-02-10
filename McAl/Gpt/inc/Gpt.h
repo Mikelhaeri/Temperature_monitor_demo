@@ -8,7 +8,7 @@
 #ifndef MCAL_GPT_INC_GPT_H_
 #define MCAL_GPT_INC_GPT_H_
 
-#include <stdint.h>
+#include "stdint_mock.h"
 
 extern void GPT_TimerInit(void);
 

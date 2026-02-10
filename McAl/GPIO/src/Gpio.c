@@ -16,7 +16,7 @@
 
 #include <Gpio.h>
 
-#include "../cfg/Gpio_cfg.h"
+#include "Gpio_cfg.h"
 
 
 /* Pin mask lookup table
