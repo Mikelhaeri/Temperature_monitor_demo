@@ -12,7 +12,7 @@
 #define ADC_MAX_VALUE          (4095u)
 
 #define ADC_TIMEOUT            (100u)
-#define ADC_DEFAULTVAL         (0xffffu)
+#define ADC_DEFAULTVAL         ADC_ERROR_VAL
 
 #define ADC_STARTCONV          (1u)
 #define ADC_CONVFINISHED       (1u)

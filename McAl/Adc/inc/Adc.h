@@ -10,6 +10,8 @@
 
 #include "stdint_mock.h"
 
+#define ADC_ERROR_VAL MAXSINT16
+
 extern void Adc_Read(void);
 
 extern uint16_t Adc_Read(void);
