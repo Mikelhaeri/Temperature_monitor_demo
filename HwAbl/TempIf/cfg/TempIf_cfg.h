@@ -8,7 +8,7 @@
 #ifndef HWABL_TEMPIF_CFG_TEMPIF_CFG_H_
 #define HWABL_TEMPIF_CFG_TEMPIF_CFG_H_
 
-#define TEMPIF_INITVAL           (MAXSINT16)
+#define TEMPIF_INITVAL           (0)
 #define TEMPIF_DFTVAL            ((int16_t)ADC_ERROR_VAL)
 
 /* Target: 0.1°C per LSB */
