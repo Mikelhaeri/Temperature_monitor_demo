@@ -49,22 +49,8 @@ void Gpio_WritePin(Gpio_Port_t Port, Gpio_Pin_t  Pin, Gpio_PinState_t State)
 {
     if(Pin < GPIO_PINS_PER_PORT)
     {
-        if(GPIO_PIN_LOW == State)
-        {
-            if(GPIO_PORT_A == Port)
-            {
-                GPIO_PORTA_DATA_REG &= ~Gpio_PinMask[Pin];
-            }
-            else if(GPIO_PORT_B == Port)
-            {
-                GPIO_PORTB_DATA_REG &= ~Gpio_PinMask[Pin];
-            }
-            else
-            {
-                /* Misra else */
-            }
-        }
-        else
+        
+        if(GPIO_PIN_HIGH == State)
         {
             if(GPIO_PORT_A == Port)
             {
@@ -76,7 +62,22 @@ void Gpio_WritePin(Gpio_Port_t Port, Gpio_Pin_t  Pin, Gpio_PinState_t State)
             }
             else
             {
-                /* Misra else */
+                /* Misra else do nothing, no error handling*/
+            }
+        }
+        else /* if wrong state value set to low */
+        {
+            if(GPIO_PORT_A == Port)
+            {
+                GPIO_PORTA_DATA_REG &= ~Gpio_PinMask[Pin];
+            }
+            else if(GPIO_PORT_B == Port)
+            {
+                GPIO_PORTB_DATA_REG &= ~Gpio_PinMask[Pin];
+            }
+            else
+            {
+                /* Misra else do nothing, no error handling*/
             }
         }
     }
@@ -119,22 +120,7 @@ void Gpio_SetPinDirection(Gpio_Port_t Port, Gpio_Pin_t  Pin, Gpio_PinDirection_t
 {
     if(Pin < GPIO_PINS_PER_PORT)
     {
-        if(GPIO_DIR_INPUT == Direction)
-        {
-            if(GPIO_PORT_A == Port)
-            {
-                GPIO_PORTA_DIR_REG &= ~Gpio_PinMask[Pin];
-            }
-            else if(GPIO_PORT_B == Port)
-            {
-                GPIO_PORTB_DIR_REG &= ~Gpio_PinMask[Pin];
-            }
-            else
-            {
-                /* Misra else */
-            }
-        }
-        else
+        if(GPIO_DIR_OUTPUT == Direction)
         {
             if(GPIO_PORT_A == Port)
             {
@@ -146,7 +132,22 @@ void Gpio_SetPinDirection(Gpio_Port_t Port, Gpio_Pin_t  Pin, Gpio_PinDirection_t
             }
             else
             {
-                /* Misra else */
+                /* Misra else do nothing, no error handling*/
+            }
+        }
+        else
+        {
+            if(GPIO_PORT_A == Port)
+            {
+                GPIO_PORTA_DIR_REG &= ~Gpio_PinMask[Pin];
+            }
+            else if(GPIO_PORT_B == Port)
+            {
+                GPIO_PORTB_DIR_REG &= ~Gpio_PinMask[Pin];
+            }
+            else
+            {
+                /* Misra else do nothing, no error handling*/
             }
         }
     }
