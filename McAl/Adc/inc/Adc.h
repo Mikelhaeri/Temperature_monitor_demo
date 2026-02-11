@@ -10,8 +10,8 @@
 
 #include "stdint_mock.h"
 
-extern void ADC_Init(void);
+extern void Adc_Read(void);
 
-extern uint16_t ADC_Read(void);
+extern uint16_t Adc_Read(void);
 
 #endif /* MCAL_ADC_INC_ADC_H_ */
