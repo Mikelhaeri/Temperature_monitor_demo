@@ -12,9 +12,10 @@
 #include "EEPROMIf_types.h"
 
 /* Init mock EEPROM */
-void EEPROMIf_Init(void);
+extern void EEPROMIf_Init(void);
 
-/* Read bytes from EEPROM */
-void EEPROMIf_Read(uint16_t Addr_u16, uint8_t* Data_pu8, uint16_t Len_u16);
+extern       uint8_t EEPROMIf_GetHwRevision(void);
+
+extern const uint8_t* EEPROMIf_GetHwSerial(void);
 
 #endif /* HWABL_EEPROMIF_INC_EEPROMIF_H_ */
