@@ -16,4 +16,6 @@ extern void Adc_Read(void);
 
 extern uint16_t Adc_Read(void);
 
+extern void Adc_Trigger(void);
+
 #endif /* MCAL_ADC_INC_ADC_H_ */
