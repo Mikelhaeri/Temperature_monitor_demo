@@ -1,0 +1,19 @@
+/*
+ * TempMon_types.h
+ *
+ *  Created on: 11.02.2026
+ *      Author: Mikel
+ */
+
+#ifndef APPLICATION_TEMPMON_INC_TEMPMON_TYPES_H_
+#define APPLICATION_TEMPMON_INC_TEMPMON_TYPES_H_
+
+typedef enum {
+    TEMPMON_STATE_INIT,
+    TEMPMON_STATE_NORMAL,
+    TEMPMON_STATE_WARNING,
+    TEMPMON_STATE_CRITICAL,
+    TEMPMON_STATE_ERROR
+} TempMon_State_ten;
+
+#endif /* APPLICATION_TEMPMON_INC_TEMPMON_TYPES_H_ */
