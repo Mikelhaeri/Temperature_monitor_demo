@@ -23,7 +23,7 @@ uint16_t Adc_Read(void)
 {
     uint16_t RetVal_u16 = ADC_DEFAULTVAL;
     
-    if(ADC_CONVFINISHED != Adc_Finished_Reg) 
+    if(ADC_CONVFINISHED == Adc_Finished_Reg) 
     {
         RetVal_u16 = Adc_MockRead_Reg;
     }
