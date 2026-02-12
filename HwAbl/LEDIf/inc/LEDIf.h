@@ -12,12 +12,9 @@
 #include "LEDIf_types.h"
 
 /* Initialize LED interface */
-void LEDIf_Init(void);
+extern void LEDIf_Init(void);
 
 /* Set LED state */
-void LEDIf_Set(uint8_t LedNr, Gpio_PinState_t State);
-
-/* Toggle LED state */
-void LEDIf_Toggle(uint8_t LedNr);
+extern void LEDIf_Set(uint8_t LedNr, Gpio_PinState_t State);
 
 #endif /* HWABL_LEDIF_INC_LEDIF_H_ */
