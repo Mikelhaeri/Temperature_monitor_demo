@@ -20,7 +20,7 @@ static volatile uint16_t GPT_TimerCmprReg;
 /* Running timer register controlled by µC needed for compare register of timer counter with natural overflow */
 static volatile uint16_t GPT_TimeCntReg; 
 
-
+static volatile uint8_t GPT_IsrFlagReg;
 
 /* Init function of GPT module */
 void GPT_TimerInit(void)
@@ -36,7 +36,7 @@ void GPT_TimerInit(void)
 /* Start Timer, since the whole project only needs to calculate and compare temperature this is the only needed type
  * of timer setting needed
  */
-void GPT_Timer_Start()
+void GPT_Timer_Start(void)
 {
     GPT_TimerCmprReg = GPT_TimeCntReg + GPT_US_TO_TICKS(GPT_TIMER_PERIOD);
     
@@ -57,7 +57,9 @@ void GPT_ISR(void)
     
     GPT_TimerCmprReg += GPT_US_TO_TICKS(GPT_TIMER_PERIOD);
 
-    GPT_NOTIFICATION();
+    Gpt_Notification();
+    
+    GPT_IsrFlagReg = GPT_ISRFLG_RST;
     
     GPT_NotifyEnabled_Reg = GPT_TIMER_ENABLE;
 }
